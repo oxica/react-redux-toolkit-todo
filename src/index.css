@@ -7,9 +7,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url(./img/25.jpg);
+  /* background-position: center -100px; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.title {
+  color: rgb(143, 1, 1);
+  text-align: center;
+  font-size: 70px;
+  font-weight: 1000;
+  margin: 0;
+  margin-top: 40px;
+  text-shadow: 3px 2px 1px black;
+}
+
+center {
+  width: 500px;
+  padding: 30px;
+  margin: 40px auto;
+  background-color: rgba(82, 82, 82, 0.514);
+  box-shadow: 0 2px 3px rgb(0 0 0/12%), 0 2px 2px rgb(0 0 0/14%),
+    0 3px 2px rgb(0 0 0/20%);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  width: 390px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.329);
+  padding: 4px;
+  font-size: 18px;
+}
+
+.todo {
+  text-align: center;
+}
+
+.btn {
+  color: rgb(202, 0, 0);
+  cursor: pointer;
+}
+
+input:checked + span {
+  text-decoration: line-through rgb(216, 82, 82);
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: rgb(202, 0, 0);
+  color: #fff;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  transform: translate(0%, -7%);
+}
+
+button:hover {
+  background-color: red;
 }
